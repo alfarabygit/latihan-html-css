@@ -4,6 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Belajar CSS</title>
+    <style>
+      /* .nav {
+        background-color: #ee4a8f;
+      }
+      .main {
+        background-color: #4ed84e;
+      }
+      .main span {
+        background-color: bisque;
+      } */
+
+      img {
+        width: 250px;
+        height: 250px;
+        /* display: none; */
+      }
+      .main {
+        width: 500px;
+        background-color: aqua;
+        display: block;
+      }
+      .main h2 {
+        background-color: blue;
+      }
+      .nav li {
+        display: inline;
+        list-style: none;
+      }
+      .nav ul li a {
+        display: inline-block;
+        width: 100px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="header">
+      <h1>Welcome to My Website!</h1>
+    </div>
+
+    <div class="nav">
+      <h2>Link list</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2>Title Article</h2>
+      <img src="../Mobile login-bro.png" alt="" />
+      <p>Lorem, ipsum dolor <span> sit amet consectetur adipisicing elit.</span> Nemo, natus?</p>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque voluptas consequatur, aspernatur vel provident quae!</p>
+    </div>
+
+    <div class="copyright">
+      <p>2023. Indracode</p>
+    </div>
+  </body>
 </html>
