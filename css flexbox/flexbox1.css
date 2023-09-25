@@ -1,0 +1,149 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b1a9a9;
+  line-height: 1.7;
+  padding-bottom: 1000px;
+}
+
+/* Latihan 1 */
+.container-one {
+  width: 900px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+.sidebar-kedua {
+  flex: 1;
+  order: 3;
+}
+
+/* latihan 2 */
+.container-two {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.container {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.container.about {
+  background-color: aqua;
+}
+
+.container.skills {
+  background-color: chartreuse;
+}
+
+.container.work {
+  background-color: crimson;
+}
+
+/* Latihan 3 */
+.container-three {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 50%;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+/* latihan 4 */
+.container-four {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.card {
+  width: 50%;
+  border: 3px solid gray;
+  border-radius: 1rem;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 10px;
+  flex: 1;
+}
+
+/* .card.main {
+  transform: scale(1.2);
+} */
+
+.card .header {
+  height: 200px;
+  background-color: #e4ddb8;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
+
+/* latihan 5 */
+.container-five {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 5px solid black;
+  display: flex;
+}
+
+.kotak {
+  width: 120px;
+  height: 120px;
+  background-color: brown;
+  color: beige;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+
+.kotak span {
+  margin: auto;
+}
+
+/* media queries */
+@media (min-width: 600px) {
+  .container-two {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .container {
+    width: 30%;
+  }
+
+  .thumbnail {
+    width: 25%;
+  }
+  .card {
+    width: 20%;
+  }
+}
